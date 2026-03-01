@@ -1,0 +1,418 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+h1 { font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul { list-style: none;}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0,0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.5);
+    color: white;
+    background-color: blue;
+}
+
+button:hover{
+    background-color: rgb(40, 40, 134);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: blue;}
+
+header{
+    background-color: rgb(192, 192, 192);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blue;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blue;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#historia .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+#Mision-vision-valores{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#Mision-vision-valores .container{
+    padding: 150px 12px;
+
+}
+
+#Mision-vision-valores h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Mision-vision-valores p{
+    display: none;
+
+}
+
+#Mision-vision-valores .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+
+}
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("background.jpg");
+
+}
+
+
+.carta:nth-child(2){
+      background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("background2.jpg");
+
+
+}
+
+
+.carta:nth-child(3){
+    
+      background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("background3.jpg");
+
+}
+
+#servicios .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#servicios li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#productos .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#productos li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#contactos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#contactos li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(44, 44, 44);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #historia .container{
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+    #historia .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #historia h2{
+        margin-top: 0px;
+    }
+
+    #historia .img-container{
+         background-image: url("innovatech.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 1300px;
+        
+    }
+
+    #Mision-vision-valores .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Mision-vision-valores p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Mision-vision-valores h3{
+        margin-top: 0;
+    }
+
+    #Mision-vision-valores .carta{
+        padding: 50px;
+    }
+
+    
+    #servicios{
+        background-image: url("0001.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 120px;
+
+    }
+
+    #servicios .container{
+        text-align: initial;
+    }
+
+    #servicios .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #servicios h2{
+
+        margin-top: 0px;
+        text-align: center;
+
+    }
+
+    #servicios ul{
+        margin-left: 100px;
+    }
+
+    #productos{
+        background-image: url("Solar_Panels.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 120px;
+    }
+
+    #productos .container{
+        text-align: initial;
+    }
+
+    #productos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #productos h2{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #productos ul{
+        margin-left: 100px;
+    }
+
+    #contactos .container{
+        text-align: center;
+    }
+
+    #contactos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contactos h2{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #contactos ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+
+    }
+
+    #final button{
+        font-size: 2em;
+
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+
+}
+
+@media (min-width: 1100px) {
+    #servicios {
+        background-position-x: calc(100vw - 800px);
+    }
+}
