@@ -284,7 +284,7 @@ footer .container{
     }
 
     #historia .img-container{
-         background-image: url("innovatech.jpg");
+        background-image: url("innovatech.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -338,6 +338,7 @@ footer .container{
         text-align: center;
 
     }
+    
 
     #servicios ul{
         margin-left: 100px;
